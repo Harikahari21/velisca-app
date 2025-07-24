@@ -31,7 +31,7 @@ const Navbar = () => {
     <section className="sticky top-0 z-[999] hidden bg-white w-full lg:block shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
       <div className="main-container flex justify-between items-center py-3 ">
         <Link href="/">
-          <img src="/nav-logo.png" alt="" className=" w-fit h-12" />
+          <img src="/logo.png" alt="" className=" w-fit h-12" />
         </Link>
         <div className="flex gap-8">
           {navARR.map((item, i) => (

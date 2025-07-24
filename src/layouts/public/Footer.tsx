@@ -156,7 +156,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="col-span-1 md:col-span-2">
             <Image
-              src="/nav-logo.png"
+              src="/logo.png"
               alt="Velisca Logo"
               width={180}
               height={60}
