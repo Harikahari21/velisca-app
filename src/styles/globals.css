@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #8d67a2 transparent;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 0.25em;
+    height: 0.25em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #8d67a2;
+    border-radius: 10em;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *:disabled {
+    cursor: not-allowed;
+  }
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --skeleton-bg-light: rgb(241 245 249);
+  }
+  
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth !important;
+  }
+  
+  @theme {
+  --color-primary: #8d67a2; /* Main Highlight (Tomato Red) */
+  --color-secondary: #fc8019; /* Accent Color (Orange) */
+  --color-content: #4a5660; /* Accent Color (Orange) */
+}
+
+@layer components {
+    .main-container {
+      @apply container mx-auto max-w-[1360px] px-4 md:px-5 lg:px-7 2xl:px-10;
+    }
+
+    .main-spacing {
+    @apply pt-12 md:pt-16 lg:pt-20 2xl:pt-24;
+  }
+
+}
+
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 40s linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 40s linear infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom gradient backgrounds */
+.gradient-purple-pink {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-blue-purple {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
