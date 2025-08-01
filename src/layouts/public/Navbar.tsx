@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navARR = [
     { title: "Homestays", link: "/", isSubmenu: false },
-    { title: "About Us", link: "/about-us", isSubmenu: false },
+    { title: "About Us", link: "/aboutUs", isSubmenu: false },
     { title: "Services", link: "/services", isSubmenu: false },
     { title: "Experiences", link: "/experiences", isSubmenu: false },
   ];

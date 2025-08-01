@@ -1,5 +1,3 @@
-"use client";
-
 import { Mail, Lock, Eye, EyeOff, HomeIcon } from "lucide-react";
 import { useState } from "react";
 import { useFormik } from "formik";
