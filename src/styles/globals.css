@@ -40,7 +40,7 @@
   }
   
   @theme {
-  --color-primary: #8d67a2; /* Main Highlight (Tomato Red) */
+  --color-primary: #8d67a2; 
   --color-secondary: #fc8019; /* Accent Color (Orange) */
   --color-content: #4a5660; /* Accent Color (Orange) */
 }

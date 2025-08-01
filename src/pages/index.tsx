@@ -1,11 +1,13 @@
-import { HeroSection } from "@/components";
-import DestinationSection from "@/components/home/DestinationSection";
-import FeaturesSection from "@/components/home/FeaturesSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
 import { PublicLayout } from "@/layouts";
 import { motion } from "framer-motion";
 import Navbar from "@/layouts/public/Navbar";
 import { Heart, Search } from "lucide-react";
+import {
+  DestinationSection,
+  FeaturesSection,
+  HeroSection,
+  TestimonialsSection,
+} from "@/components";
 
 export default function Home() {
   return (

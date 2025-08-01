@@ -49,7 +49,7 @@ const HeroSection = () => {
   }, [activeIndex]);
 
   return (
-    <section className="main-spacing w-full bg-cover bg-no-repeat bg-[url('/images/frame.png')] pb-8 lg:pb-16 2xl:pb-24 overflow-hidden">
+    <section className="main-spacing w-full pb-8 lg:pb-16 2xl:pb-24 overflow-hidden">
       <article className="main-container flex flex-col items-center lg:justify-between lg:flex-row gap-8 md:gap-20 lg:gap-12 2xl:gap-16">
         <aside className="w-full flex flex-col items-center text-center lg:items-start lg:text-left gap-6 ">
           <motion.div
