@@ -2,6 +2,7 @@ import type React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Head from "next/head";
+import { PublicLayout } from "@/layouts";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -54,7 +55,7 @@ function AnimatedSection({
 
 export default function About() {
   return (
-    <>
+    <PublicLayout>
       <Head>
         <title>About Us - Velisca</title>
         <meta
@@ -69,7 +70,7 @@ export default function About() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/villas/about-bg.avif?height=1080&width=1920')`,
+              backgroundImage: `url('/about/living.jpg?height=1080&width=1920')`,
             }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
@@ -83,7 +84,7 @@ export default function About() {
               className="mb-8"
             >
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight">
-                <span className="text-primary drop-shadow-2xl">Velisca</span>
+                <span className="text-white drop-shadow-2xl">Velisca</span>
               </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-[#8d67a2] to-purple-400 mx-auto mb-8 rounded-full"></div>
             </motion.div>
@@ -156,14 +157,14 @@ export default function About() {
                   <div className="grid grid-cols-2 gap-4 mt-8">
                     <div className="relative overflow-hidden rounded-2xl shadow-xl">
                       <img
-                        src="/placeholder.svg?height=300&width=250"
+                        src="/about/bedroom.jpg?height=300&width=250"
                         alt="Modern hotel lobby"
                         className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
                       />
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-xl mt-8">
                       <img
-                        src="/placeholder.svg?height=300&width=250"
+                        src="/about/bedroom1.jpg?height=300&width=250"
                         alt="Luxury bedroom suite"
                         className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
                       />
@@ -262,7 +263,7 @@ export default function About() {
                     <div className="flex justify-center mb-6">
                       <div className="relative">
                         <img
-                          src="/placeholder.svg?height=120&width=120"
+                          src="/about/team.jpg?height=120&width=120"
                           alt="Leadership Team"
                           className="w-24 h-24 rounded-full object-cover shadow-lg"
                         />
@@ -301,7 +302,7 @@ export default function About() {
                     <div className="flex justify-center mb-6">
                       <div className="relative">
                         <img
-                          src="/placeholder.svg?height=120&width=120"
+                          src="/about/team1.jpg?height=120&width=120"
                           alt="Product & Design Team"
                           className="w-24 h-24 rounded-full object-cover shadow-lg"
                         />
@@ -340,7 +341,7 @@ export default function About() {
                     <div className="flex justify-center mb-6">
                       <div className="relative">
                         <img
-                          src="/placeholder.svg?height=120&width=120"
+                          src="/about/team.jpg?height=120&width=120"
                           alt="Customer Success Team"
                           className="w-24 h-24 rounded-full object-cover shadow-lg"
                         />
@@ -476,10 +477,10 @@ export default function About() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/placeholder.svg?height=600&width=1600')`,
+              backgroundImage: `url('/pic5.webp?height=600&width=1600')`,
             }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#8d67a2]/90 via-purple-600/85 to-indigo-600/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-purple-600/70 to-indigo-600/40"></div>
 
           <div className="relative max-w-6xl mx-auto text-center">
             <AnimatedSection animation={scaleIn}>
@@ -577,6 +578,6 @@ export default function About() {
           </div>
         </section>
       </div>
-    </>
+    </PublicLayout>
   );
 }

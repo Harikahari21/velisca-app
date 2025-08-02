@@ -17,7 +17,7 @@ export default function Home() {
       <DestinationSection />
       <TestimonialsSection />
       <FeaturesSection />
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary via-pink-400 to-rose-500">
         <div className="max-w-5xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
